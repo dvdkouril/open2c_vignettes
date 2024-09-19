@@ -1779,7 +1779,7 @@ packages:
   name: open2c-vignettes
   version: 0.1.0
   path: .
-  sha256: 96e7e9f7d6ad03d46aa185986f134f47d71feaa3eb0aa0f4e710618a86b52e33
+  sha256: f235e89ba1d27c68e523dc9737da2535c754810ad1f54c396b682c749cdc7781
   requires_python: '>=3.11'
   editable: true
 - kind: conda
