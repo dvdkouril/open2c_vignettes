@@ -16,6 +16,8 @@ platforms = ["osx-arm64"]
 
 [tool.pixi.pypi-dependencies]
 open2c_vignettes = { path = ".", editable = true }
+polychrom = { git = "https://git@github.com/open2c/polychrom.git" }
+nglutils = { git = "https://git@github.com/mirnylab/nglutils.git" }
 
 [tool.pixi.tasks]
 lab = "jupyter lab"

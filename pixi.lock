@@ -154,6 +154,23 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/noarch/zipp-3.20.2-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/zstandard-0.23.0-py312h15fbf35_1.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/zstd-1.5.6-hb46c0d2_0.conda
+      - pypi: https://files.pythonhosted.org/packages/2b/03/13dde6512ad7b4557eb792fbcf0c653af6076b81e5941d36ec61f7ce6028/astunparse-1.6.3-py2.py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/e3/04/33351c5d5108460a8ce6d512307690b023f0cfcad5899499f5c83b9d63b1/contourpy-1.3.0-cp312-cp312-macosx_11_0_arm64.whl
+      - pypi: https://files.pythonhosted.org/packages/e7/05/c19819d5e3d95294a6f5947fb9b9629efb316b96de511b418c53d245aae6/cycler-0.12.1-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/dd/bd/cb8fd2dddd68089c112bf42a88afe188b8ace73f94406539857dcc9347a6/fonttools-4.53.1-cp312-cp312-macosx_11_0_arm64.whl
+      - pypi: https://files.pythonhosted.org/packages/22/2d/9c0b76f2f9cc0ebede1b9371b6f317243028ed60b90705863d493bae622e/ipywidgets-8.1.5-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/a9/93/858e87edc634d628e5d752ba944c2833133a28fa87bb093e6832ced36a3e/jupyterlab_widgets-3.0.13-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/80/c5/57fa58276dfdfa612241d640a64ca2f76adc6ffcebdbd135b4ef60095098/kiwisolver-1.4.7-cp312-cp312-macosx_11_0_arm64.whl
+      - pypi: https://files.pythonhosted.org/packages/35/3e/5713b84a02b24b2a4bd4d6673bfc03017e6654e1d8793ece783b7ed4d484/matplotlib-3.9.2-cp312-cp312-macosx_11_0_arm64.whl
+      - pypi: https://files.pythonhosted.org/packages/d4/e6/4335566e7d2a28a1e1e0f2bf37d207dafdc001c1407375146a2810ce8a12/mdtraj-1.10.0-cp312-cp312-macosx_11_0_arm64.whl
+      - pypi: git+https://git@github.com/mirnylab/nglutils.git@5924c4d94d013bc625812d0a4113c97fd45b8300
+      - pypi: https://files.pythonhosted.org/packages/db/6e/f26f3350b49c1d813106a497e3e9089cc2b62e845f67d95bf82ed27d0539/nglview-3.1.2.tar.gz
+      - pypi: https://files.pythonhosted.org/packages/46/77/53732fbf48196af9e51c2a61833471021c1d77d335d57b96ee3588c0c53d/notebook-7.2.2-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/e7/cf/5c558a0f247e0bf9cec92bff9b46ae6474dd736f6d906315e60e4075f737/pillow-10.4.0-cp312-cp312-macosx_11_0_arm64.whl
+      - pypi: git+https://git@github.com/open2c/polychrom.git@bd673959ec8bb2aeb75e5f99a611ba21d4bb290e
+      - pypi: https://files.pythonhosted.org/packages/e5/0c/0e3c05b1c87bb6a1c76d281b0f35e78d2d80ac91b5f8f524cebf77f51049/pyparsing-3.1.4-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/1b/d1/9babe2ccaecff775992753d8686970b1e2755d21c8a63be73aba7a4e7d77/wheel-0.44.0-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/21/02/88b65cc394961a60c43c70517066b6b679738caf78506a5da7b88ffcb643/widgetsnbextension-4.0.13-py3-none-any.whl
       - pypi: .
 packages:
 - kind: conda
@@ -276,6 +293,14 @@ packages:
   - pkg:pypi/asttokens?source=hash-mapping
   size: 28922
   timestamp: 1698341257884
+- kind: pypi
+  name: astunparse
+  version: 1.6.3
+  url: https://files.pythonhosted.org/packages/2b/03/13dde6512ad7b4557eb792fbcf0c653af6076b81e5941d36ec61f7ce6028/astunparse-1.6.3-py2.py3-none-any.whl
+  sha256: c2652417f2c8b5bb325c885ae329bdf3f86424075c4fd1a128674bc6fba4b8e8
+  requires_dist:
+  - wheel<1.0,>=0.23.0
+  - six<2.0,>=1.6.1
 - kind: conda
   name: async-lru
   version: 2.0.4
@@ -527,6 +552,45 @@ packages:
   - pkg:pypi/comm?source=hash-mapping
   size: 12134
   timestamp: 1710320435158
+- kind: pypi
+  name: contourpy
+  version: 1.3.0
+  url: https://files.pythonhosted.org/packages/e3/04/33351c5d5108460a8ce6d512307690b023f0cfcad5899499f5c83b9d63b1/contourpy-1.3.0-cp312-cp312-macosx_11_0_arm64.whl
+  sha256: da84c537cb8b97d153e9fb208c221c45605f73147bd4cadd23bdae915042aad6
+  requires_dist:
+  - numpy>=1.23
+  - furo ; extra == 'docs'
+  - sphinx>=7.2 ; extra == 'docs'
+  - sphinx-copybutton ; extra == 'docs'
+  - bokeh ; extra == 'bokeh'
+  - selenium ; extra == 'bokeh'
+  - contourpy[bokeh,docs] ; extra == 'mypy'
+  - docutils-stubs ; extra == 'mypy'
+  - mypy==1.11.1 ; extra == 'mypy'
+  - types-pillow ; extra == 'mypy'
+  - contourpy[test-no-images] ; extra == 'test'
+  - matplotlib ; extra == 'test'
+  - pillow ; extra == 'test'
+  - pytest ; extra == 'test-no-images'
+  - pytest-cov ; extra == 'test-no-images'
+  - pytest-rerunfailures ; extra == 'test-no-images'
+  - pytest-xdist ; extra == 'test-no-images'
+  - wurlitzer ; extra == 'test-no-images'
+  requires_python: '>=3.9'
+- kind: pypi
+  name: cycler
+  version: 0.12.1
+  url: https://files.pythonhosted.org/packages/e7/05/c19819d5e3d95294a6f5947fb9b9629efb316b96de511b418c53d245aae6/cycler-0.12.1-py3-none-any.whl
+  sha256: 85cef7cff222d8644161529808465972e51340599459b8ac3ccbac5a854e0d30
+  requires_dist:
+  - ipython ; extra == 'docs'
+  - matplotlib ; extra == 'docs'
+  - numpydoc ; extra == 'docs'
+  - sphinx ; extra == 'docs'
+  - pytest ; extra == 'tests'
+  - pytest-cov ; extra == 'tests'
+  - pytest-xdist ; extra == 'tests'
+  requires_python: '>=3.8'
 - kind: conda
   name: debugpy
   version: 1.8.5
@@ -632,6 +696,43 @@ packages:
   - pkg:pypi/executing?source=hash-mapping
   size: 28337
   timestamp: 1725214501850
+- kind: pypi
+  name: fonttools
+  version: 4.53.1
+  url: https://files.pythonhosted.org/packages/dd/bd/cb8fd2dddd68089c112bf42a88afe188b8ace73f94406539857dcc9347a6/fonttools-4.53.1-cp312-cp312-macosx_11_0_arm64.whl
+  sha256: 3b3c8ebafbee8d9002bd8f1195d09ed2bd9ff134ddec37ee8f6a6375e6a4f0e8
+  requires_dist:
+  - fs<3,>=2.2.0 ; extra == 'all'
+  - lxml>=4.0 ; extra == 'all'
+  - zopfli>=0.1.4 ; extra == 'all'
+  - lz4>=1.7.4.2 ; extra == 'all'
+  - pycairo ; extra == 'all'
+  - matplotlib ; extra == 'all'
+  - sympy ; extra == 'all'
+  - skia-pathops>=0.5.0 ; extra == 'all'
+  - uharfbuzz>=0.23.0 ; extra == 'all'
+  - brotlicffi>=0.8.0 ; platform_python_implementation != 'CPython' and extra == 'all'
+  - scipy ; platform_python_implementation != 'PyPy' and extra == 'all'
+  - brotli>=1.0.1 ; platform_python_implementation == 'CPython' and extra == 'all'
+  - munkres ; platform_python_implementation == 'PyPy' and extra == 'all'
+  - unicodedata2>=15.1.0 ; python_full_version < '3.13' and extra == 'all'
+  - xattr ; sys_platform == 'darwin' and extra == 'all'
+  - lz4>=1.7.4.2 ; extra == 'graphite'
+  - pycairo ; extra == 'interpolatable'
+  - scipy ; platform_python_implementation != 'PyPy' and extra == 'interpolatable'
+  - munkres ; platform_python_implementation == 'PyPy' and extra == 'interpolatable'
+  - lxml>=4.0 ; extra == 'lxml'
+  - skia-pathops>=0.5.0 ; extra == 'pathops'
+  - matplotlib ; extra == 'plot'
+  - uharfbuzz>=0.23.0 ; extra == 'repacker'
+  - sympy ; extra == 'symfont'
+  - xattr ; sys_platform == 'darwin' and extra == 'type1'
+  - fs<3,>=2.2.0 ; extra == 'ufo'
+  - unicodedata2>=15.1.0 ; python_full_version < '3.13' and extra == 'unicode'
+  - zopfli>=0.1.4 ; extra == 'woff'
+  - brotlicffi>=0.8.0 ; platform_python_implementation != 'CPython' and extra == 'woff'
+  - brotli>=1.0.1 ; platform_python_implementation == 'CPython' and extra == 'woff'
+  requires_python: '>=3.8'
 - kind: conda
   name: fqdn
   version: 1.5.1
@@ -896,6 +997,23 @@ packages:
   - pkg:pypi/ipython?source=hash-mapping
   size: 598878
   timestamp: 1725050237172
+- kind: pypi
+  name: ipywidgets
+  version: 8.1.5
+  url: https://files.pythonhosted.org/packages/22/2d/9c0b76f2f9cc0ebede1b9371b6f317243028ed60b90705863d493bae622e/ipywidgets-8.1.5-py3-none-any.whl
+  sha256: 3290f526f87ae6e77655555baba4f36681c555b8bdbbff430b70e52c34c86245
+  requires_dist:
+  - comm>=0.1.3
+  - ipython>=6.1.0
+  - traitlets>=4.3.1
+  - widgetsnbextension~=4.0.12
+  - jupyterlab-widgets~=3.0.12
+  - jsonschema ; extra == 'test'
+  - ipykernel ; extra == 'test'
+  - pytest>=3.6.0 ; extra == 'test'
+  - pytest-cov ; extra == 'test'
+  - pytz ; extra == 'test'
+  requires_python: '>=3.7'
 - kind: conda
   name: isoduration
   version: 20.11.0
@@ -1224,6 +1342,12 @@ packages:
   - pkg:pypi/jupyterlab?source=hash-mapping
   size: 7361961
   timestamp: 1724745262468
+- kind: pypi
+  name: jupyterlab-widgets
+  version: 3.0.13
+  url: https://files.pythonhosted.org/packages/a9/93/858e87edc634d628e5d752ba944c2833133a28fa87bb093e6832ced36a3e/jupyterlab_widgets-3.0.13-py3-none-any.whl
+  sha256: e3cda2c233ce144192f1e29914ad522b2f4c40e77214b0cc97377ca3d323db54
+  requires_python: '>=3.7'
 - kind: conda
   name: jupyterlab_pygments
   version: 0.3.0
@@ -1286,6 +1410,12 @@ packages:
   purls: []
   size: 74740
   timestamp: 1717164698426
+- kind: pypi
+  name: kiwisolver
+  version: 1.4.7
+  url: https://files.pythonhosted.org/packages/80/c5/57fa58276dfdfa612241d640a64ca2f76adc6ffcebdbd135b4ef60095098/kiwisolver-1.4.7-cp312-cp312-macosx_11_0_arm64.whl
+  sha256: 48b571ecd8bae15702e4f22d3ff6a0f13e54d3d00cd25216d5e7f658242065ee
+  requires_python: '>=3.8'
 - kind: conda
   name: krb5
   version: 1.21.3
@@ -1572,6 +1702,28 @@ packages:
   - pkg:pypi/markupsafe?source=hash-mapping
   size: 25840
   timestamp: 1724959900292
+- kind: pypi
+  name: matplotlib
+  version: 3.9.2
+  url: https://files.pythonhosted.org/packages/35/3e/5713b84a02b24b2a4bd4d6673bfc03017e6654e1d8793ece783b7ed4d484/matplotlib-3.9.2-cp312-cp312-macosx_11_0_arm64.whl
+  sha256: be0fc24a5e4531ae4d8e858a1a548c1fe33b176bb13eff7f9d0d38ce5112a27d
+  requires_dist:
+  - contourpy>=1.0.1
+  - cycler>=0.10
+  - fonttools>=4.22.0
+  - kiwisolver>=1.3.1
+  - numpy>=1.23
+  - packaging>=20.0
+  - pillow>=8
+  - pyparsing>=2.3.1
+  - python-dateutil>=2.7
+  - importlib-resources>=3.2.0 ; python_full_version < '3.10'
+  - meson-python>=0.13.1 ; extra == 'dev'
+  - numpy>=1.25 ; extra == 'dev'
+  - pybind11>=2.6 ; extra == 'dev'
+  - setuptools-scm>=7 ; extra == 'dev'
+  - setuptools>=64 ; extra == 'dev'
+  requires_python: '>=3.9'
 - kind: conda
   name: matplotlib-inline
   version: 0.1.7
@@ -1590,6 +1742,17 @@ packages:
   - pkg:pypi/matplotlib-inline?source=hash-mapping
   size: 14599
   timestamp: 1713250613726
+- kind: pypi
+  name: mdtraj
+  version: 1.10.0
+  url: https://files.pythonhosted.org/packages/d4/e6/4335566e7d2a28a1e1e0f2bf37d207dafdc001c1407375146a2810ce8a12/mdtraj-1.10.0-cp312-cp312-macosx_11_0_arm64.whl
+  sha256: f9a56bfa59fa0a3a0ba9e788acde3299285f58894994897e137405b0fe43f7ae
+  requires_dist:
+  - numpy<2.0.0a0,>=1.23
+  - scipy
+  - astunparse
+  - pyparsing
+  - packaging
 - kind: conda
   name: mistune
   version: 3.0.2
@@ -1718,6 +1881,65 @@ packages:
   - pkg:pypi/nest-asyncio?source=hash-mapping
   size: 11638
   timestamp: 1705850780510
+- kind: pypi
+  name: nglutils
+  version: 0.1.1
+  url: git+https://git@github.com/mirnylab/nglutils.git@5924c4d94d013bc625812d0a4113c97fd45b8300
+  requires_dist:
+  - matplotlib
+  - numpy
+  - mdtraj
+  - nglview
+- kind: pypi
+  name: nglview
+  version: 3.1.2
+  url: https://files.pythonhosted.org/packages/db/6e/f26f3350b49c1d813106a497e3e9089cc2b62e845f67d95bf82ed27d0539/nglview-3.1.2.tar.gz
+  sha256: 7f672efa2b6ca0db34de968e5b5766b14b1b3dade212d2f8a083c600a11345ce
+  requires_dist:
+  - ipywidgets>=8
+  - notebook>=7
+  - jupyterlab-widgets
+  - numpy
+  - mdanalysis ; extra == 'mdanalysis'
+  - parmed ; extra == 'parmed'
+  - ase ; extra == 'ase'
+  - htmd ; extra == 'htmd'
+  - mdtraj ; extra == 'mdtraj'
+  - pytraj ; extra == 'pytraj'
+  - qcelemental ; extra == 'qcelemental'
+  - rdkit ; extra == 'rdkit'
+  - simpletraj ; extra == 'simpletraj'
+  requires_python: '>=3.6'
+- kind: pypi
+  name: notebook
+  version: 7.2.2
+  url: https://files.pythonhosted.org/packages/46/77/53732fbf48196af9e51c2a61833471021c1d77d335d57b96ee3588c0c53d/notebook-7.2.2-py3-none-any.whl
+  sha256: c89264081f671bc02eec0ed470a627ed791b9156cad9285226b31611d3e9fe1c
+  requires_dist:
+  - jupyter-server<3,>=2.4.0
+  - jupyterlab-server<3,>=2.27.1
+  - jupyterlab<4.3,>=4.2.0
+  - notebook-shim<0.3,>=0.2
+  - tornado>=6.2.0
+  - hatch ; extra == 'dev'
+  - pre-commit ; extra == 'dev'
+  - myst-parser ; extra == 'docs'
+  - nbsphinx ; extra == 'docs'
+  - pydata-sphinx-theme ; extra == 'docs'
+  - sphinx>=1.3.6 ; extra == 'docs'
+  - sphinxcontrib-github-alt ; extra == 'docs'
+  - sphinxcontrib-spelling ; extra == 'docs'
+  - importlib-resources>=5.0 ; python_full_version < '3.10' and extra == 'test'
+  - ipykernel ; extra == 'test'
+  - jupyter-server[test]<3,>=2.4.0 ; extra == 'test'
+  - jupyterlab-server[test]<3,>=2.27.1 ; extra == 'test'
+  - nbval ; extra == 'test'
+  - pytest-console-scripts ; extra == 'test'
+  - pytest-timeout ; extra == 'test'
+  - pytest-tornasync ; extra == 'test'
+  - pytest>=7.0 ; extra == 'test'
+  - requests ; extra == 'test'
+  requires_python: '>=3.8'
 - kind: conda
   name: notebook-shim
   version: 0.2.4
@@ -1779,7 +2001,7 @@ packages:
   name: open2c-vignettes
   version: 0.1.0
   path: .
-  sha256: f235e89ba1d27c68e523dc9737da2535c754810ad1f54c396b682c749cdc7781
+  sha256: 8907630925b764e80cbd27acdd64fa0801f38e3057c6b858c57bf0a6fcf340e6
   requires_python: '>=3.11'
   editable: true
 - kind: conda
@@ -1927,6 +2149,33 @@ packages:
   - pkg:pypi/pickleshare?source=hash-mapping
   size: 9332
   timestamp: 1602536313357
+- kind: pypi
+  name: pillow
+  version: 10.4.0
+  url: https://files.pythonhosted.org/packages/e7/cf/5c558a0f247e0bf9cec92bff9b46ae6474dd736f6d906315e60e4075f737/pillow-10.4.0-cp312-cp312-macosx_11_0_arm64.whl
+  sha256: 866b6942a92f56300012f5fbac71f2d610312ee65e22f1aa2609e491284e5597
+  requires_dist:
+  - furo ; extra == 'docs'
+  - olefile ; extra == 'docs'
+  - sphinx>=7.3 ; extra == 'docs'
+  - sphinx-copybutton ; extra == 'docs'
+  - sphinx-inline-tabs ; extra == 'docs'
+  - sphinxext-opengraph ; extra == 'docs'
+  - olefile ; extra == 'fpx'
+  - olefile ; extra == 'mic'
+  - check-manifest ; extra == 'tests'
+  - coverage ; extra == 'tests'
+  - defusedxml ; extra == 'tests'
+  - markdown2 ; extra == 'tests'
+  - olefile ; extra == 'tests'
+  - packaging ; extra == 'tests'
+  - pyroma ; extra == 'tests'
+  - pytest ; extra == 'tests'
+  - pytest-cov ; extra == 'tests'
+  - pytest-timeout ; extra == 'tests'
+  - typing-extensions ; python_full_version < '3.10' and extra == 'typing'
+  - defusedxml ; extra == 'xmp'
+  requires_python: '>=3.8'
 - kind: conda
   name: pkgutil-resolve-name
   version: 1.3.10
@@ -1961,6 +2210,10 @@ packages:
   - pkg:pypi/platformdirs?source=hash-mapping
   size: 20625
   timestamp: 1726613611845
+- kind: pypi
+  name: polychrom
+  version: 0.1.1
+  url: git+https://git@github.com/open2c/polychrom.git@bd673959ec8bb2aeb75e5f99a611ba21d4bb290e
 - kind: conda
   name: prometheus_client
   version: 0.20.0
@@ -2129,6 +2382,15 @@ packages:
   - pkg:pypi/pyobjc-framework-cocoa?source=hash-mapping
   size: 381079
   timestamp: 1725875188776
+- kind: pypi
+  name: pyparsing
+  version: 3.1.4
+  url: https://files.pythonhosted.org/packages/e5/0c/0e3c05b1c87bb6a1c76d281b0f35e78d2d80ac91b5f8f524cebf77f51049/pyparsing-3.1.4-py3-none-any.whl
+  sha256: a6a7ee4235a3f944aa1fa2249307708f893fe5717dc603503c6c7969c070fb7c
+  requires_dist:
+  - railroad-diagrams ; extra == 'diagrams'
+  - jinja2 ; extra == 'diagrams'
+  requires_python: '>=3.6.8'
 - kind: conda
   name: pysocks
   version: 1.7.1
@@ -2850,6 +3112,21 @@ packages:
   - pkg:pypi/websocket-client?source=hash-mapping
   size: 47066
   timestamp: 1713923494501
+- kind: pypi
+  name: wheel
+  version: 0.44.0
+  url: https://files.pythonhosted.org/packages/1b/d1/9babe2ccaecff775992753d8686970b1e2755d21c8a63be73aba7a4e7d77/wheel-0.44.0-py3-none-any.whl
+  sha256: 2376a90c98cc337d18623527a97c31797bd02bad0033d41547043a1cbfbe448f
+  requires_dist:
+  - pytest>=6.0.0 ; extra == 'test'
+  - setuptools>=65 ; extra == 'test'
+  requires_python: '>=3.8'
+- kind: pypi
+  name: widgetsnbextension
+  version: 4.0.13
+  url: https://files.pythonhosted.org/packages/21/02/88b65cc394961a60c43c70517066b6b679738caf78506a5da7b88ffcb643/widgetsnbextension-4.0.13-py3-none-any.whl
+  sha256: 74b2692e8500525cc38c2b877236ba51d34541e6385eeed5aec15a70f88a6c71
+  requires_python: '>=3.7'
 - kind: conda
   name: xz
   version: 5.2.6
