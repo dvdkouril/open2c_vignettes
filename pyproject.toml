@@ -18,6 +18,8 @@ platforms = ["osx-arm64"]
 open2c_vignettes = { path = ".", editable = true }
 polychrom = { git = "https://git@github.com/open2c/polychrom.git" }
 nglutils = { git = "https://git@github.com/mirnylab/nglutils.git" }
+chromospyce = "~=0.0.5"
+pyarrow = ">=17.0.0"
 
 [tool.pixi.tasks]
 lab = "jupyter lab"
